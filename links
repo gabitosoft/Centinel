@@ -1,0 +1,22 @@
+https://github.com/arut/nginx-rtmp-module
+
+http://www.truiton.com/2015/03/stream-rtmp-live-android/
+
+
+http://ubuntuforums.org/archive/index.php/t-1710642.html
+More options for x11grab - positioning of the grab area if less than your screen.
+
+for example, if you want to capture 1024x768 from the middle of your 1920x1080 display
+
+x position = 1920-1024 = 896 then /2 = 448
+y position = 1080-768 = 312 then /2 = 156
+
+then your command would read (using 1. from shantiq's examples):
+
+ffmpeg -f x11grab -s 1024x768 -r 25 -i :0.0+448,156 -sameq ./Desktop/mydesktop.mkv
+
+http://sourceforge.net/projects/rtmpjavaclient/files/
+
+http://ubuntuforums.org/showthread.php?t=2114469
+https://libav.org/avconv.html#rtmp
+http://www.leaseweblabs.com/2013/11/streaming-video-demand-nginx-rtmp-module/
